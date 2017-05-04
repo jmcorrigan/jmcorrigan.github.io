@@ -139,13 +139,16 @@ body {
 .container .container-content .container-content-inner h1 {
   font-weight: 700;
   margin-top: 30px;
-  margin-bottom: 30px;
   font-size: 50px;
 }
 .container .container-content .container-content-inner hr {
   margin: 30px auto;
 }
 .container .container-content .container-content-inner p {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.95);
+}
+.container .container-content .container-content-inner .contact p {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.95);
   font-size: 45px;
@@ -201,3 +204,4 @@ fieldset[disabled] .btn-primary.active {
   color: #F05F40;
   background-color: white;
 }
+
