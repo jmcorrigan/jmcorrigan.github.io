@@ -14,6 +14,8 @@ body {
   -o-background-size:cover;
   background-position:center;
   color:#fff;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
@@ -26,7 +28,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #ff6544;
+  color: #70b3e1;
   border-color:rgba(255, 255, 255);
 }
 h1,
@@ -38,6 +40,7 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 p {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -86,7 +89,7 @@ p {
 }
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(15, 15, 15, 1);
     border-color: rgba(255, 255, 255, 0.3);
   }
   .navbar-default .navbar-header .navbar-brand {
@@ -207,4 +210,8 @@ fieldset[disabled] .btn-primary.active {
 
 .resume {
   text-align: left;
+  font-size: 16px;
+}
+.resume p {
+  font-family: 'Roboto Slab', serif;
 }
