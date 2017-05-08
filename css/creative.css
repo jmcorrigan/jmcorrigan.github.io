@@ -282,5 +282,9 @@ fieldset[disabled] .btn-primary.active {
 /* responsive media queries */
 
 @media (max-width: 768px) {
- 
+  .button-group{
+    display: block !important;
+    width: auto !important;
+    padding-bottom:10px;
+  }
 }
