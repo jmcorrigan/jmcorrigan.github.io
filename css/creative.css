@@ -236,13 +236,19 @@ fieldset[disabled] .btn-primary.active {
    margin-right:0;
 }
 
-.item { 
-  border: none;
+.item-wrap { 
+  padding: 7px;
+  font-size: 10   px;
+
 }
 
 .caption {
   border-color:rgba(255, 255, 255);
   background-color: rgba(255, 255, 255);
+}
+
+.button-group {
+  padding-bottom: 15px;
 }
 
 /* Isotope Transitions
