@@ -64,22 +64,24 @@
 // Isotope filters
         //-----------------------------------------------
 $( document ).ready(function() {
-    $('#container').imagesLoaded( function() {
-  // images have loaded
-      /* activate jquery isotope */
-      var $container = $('#posts').isotope({
-        itemSelector : '.item',
-        isFitWidth: true
-      });
-      
-      $container.isotope({ filter: '*' });
+    $('#container-content-inner').imagesLoaded()
+    // images have loaded
+        .done( function() { 
+            /* activate jquery isotope */
+            console.log("we good")
+            var $container = $('#posts').isotope({
+                itemSelector : '.item',
+                isFitWidth: true
+            });
+              
+            $container.isotope({ filter: '*' });
 
-        // filter items on button click
-      $('#filters').on( 'click', 'button', function() {
-        var filterValue = $(this).attr('data-filter');
-        $container.isotope({ filter: filterValue });
-      });
-    });
+            // filter items on button click
+            $('#filters').on( 'click', 'button', function() {
+                var filterValue = $(this).attr('data-filter');
+                $container.isotope({ filter: filterValue });
+            });
+        });
 });
 
 })(jQuery); // End of use strict
