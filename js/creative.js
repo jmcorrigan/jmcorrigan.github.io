@@ -1,6 +1,27 @@
 (function($) {
     "use strict"; // Start of use strict
 
+
+// Load Isotope images
+    $('#item-wrap').imagesLoaded()
+    // images have loaded
+    .done( function() { 
+        /* activate jquery isotope */
+        console.log("we good")
+        var $container = $('#posts').isotope({
+            itemSelector : '.item',
+            isFitWidth: true
+        });
+          
+        $container.isotope({ filter: '*' });
+
+        // filter items on button click
+        $('#filters').on( 'click', 'button', function() {
+            var filterValue = $(this).attr('data-filter');
+            $container.isotope({ filter: filterValue });
+        });
+    });
+
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $(document).on('click', 'a.page-scroll', function(event) {
         var $anchor = $(this);
@@ -60,28 +81,5 @@
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         }
     });
-
-// Isotope filters
-        //-----------------------------------------------
-$( document ).ready(function() {
-    $('#container-content-inner').imagesLoaded()
-    // images have loaded
-        .done( function() { 
-            /* activate jquery isotope */
-            console.log("we good")
-            var $container = $('#posts').isotope({
-                itemSelector : '.item',
-                isFitWidth: true
-            });
-              
-            $container.isotope({ filter: '*' });
-
-            // filter items on button click
-            $('#filters').on( 'click', 'button', function() {
-                var filterValue = $(this).attr('data-filter');
-                $container.isotope({ filter: filterValue });
-            });
-        });
-});
 
 })(jQuery); // End of use strict
