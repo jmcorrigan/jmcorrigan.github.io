@@ -136,7 +136,6 @@ body {
 .container .container-content {
   position: relative;
   text-align: center;
-  line-height: 150%;
   padding: 100px 15px 100px;
   width: 100%;
 }
@@ -239,7 +238,7 @@ fieldset[disabled] .btn-primary.active {
 
 .item-wrap { 
   padding: 7px;
-  font-size: 10px;
+  font-size: 10   px;
 
 }
 
