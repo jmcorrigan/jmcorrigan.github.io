@@ -137,17 +137,17 @@ body {
 #page-text {
   padding-bottom:0.75em; 
   line-height: 1.75em;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 
 #page-text a {
   font-style: italic;
-  color: #F31616;
+  color: rgba(243,22,22,0.75);
   text-decoration: underline;
 }
 
 #page-text a:hover {
-  background-color: #F31616;
+  background-color: rgba(243,22,22,0.75);
   color: #fff;
   text-decoration: none;
 }
@@ -158,10 +158,44 @@ body {
   margin-left: auto;
 }
 
-#bars {margin-left: 15px;   position: absolute; top:0; left:0%; right:0; height: 10px; background-color:#f31616}
-#bars-second {position: absolute; top:0; left:25%; right:0; height: 10px; background-color:#16f316}
-#bars-third {position: absolute; top:0; left:50%; right:0; height: 10px; background-color:#1616f3}
-#bars-fourth {position: absolute; top:0; left:75%; right:0; height: 10px; background-color:#f38416}
+#bars {margin-left: 15px;   position: absolute; top:0; left:0%; right:0; height: 12px; background-color: rgba(243,22,22,1)}
+#bars-second {position: absolute; top:0; left:25%; right:0; height: 12px; background-color: rgba(22,243,22,1)}
+#bars-third {position: absolute; top:0; left:50%; right:0; height: 12px; background-color:rgba(22,22,243,1)}
+#bars-fourth {position: absolute; top:0; left:75%; right:0; height: 12px; background-color:rgba(243,132,22,1)}
+
+#clips-thumb {
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#publication{
+    font-size:30px;
+}
+#publication ul li{
+/*  list-style-type: none;*/
+  font-size: 20px;
+  padding: 5px 0px;
+
+}
+
+/*#publication ul li:before {
+  content: '\2014';
+  position: absolute;
+  margin-left: -30px;
+}*/
+
+#publication, a {
+  color: black;
+}
+
+
+#publication li a:hover {
+  background-color: rgba(22,22,243,0.75);
+  color: #fff;
+  text-decoration: none;
+}
 
 @media(min-width:768px) {
   #wrapper {
